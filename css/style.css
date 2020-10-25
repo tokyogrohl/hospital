@@ -26,6 +26,7 @@ color: #8e8e8e;
 }
 .contact-form{
 margin-top:7em;
+margin-left:3em; 
 }
 .text-box input[type="text"], .textarea textarea {
 border: 2px solid #E5E5E5;
@@ -59,7 +60,8 @@ color:#0199e6;
 border: 1px solid #0199e6;
 background:transparent;
 }
-.text-box input[type="text"]:hover, .textarea textarea:hover, .text-box input[type="text"]:focus, .textarea textarea:focus {
+.text-box input[type="text"]:hover, .textarea textarea:hover, .text-box input[type="text"]:focus, .textarea textarea:focus, .text-box input[type="password"]:focus {
+outline:none;
 border-color:#008ed6;
 }
 
