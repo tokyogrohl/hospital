@@ -55,11 +55,15 @@ font-weight:600;
 margin: 0 auto;
 border-radius: 25px; /*lingakran ktak*/
 }
-.textarea input[type="submit"]:hover{
+.textarea input[type="submit"]:hover {
 color:#0199e6;
 border: 1px solid #0199e6;
 background:transparent;
 }
+.textarea input[type="submit"]:focus {
+	outline:none;
+}
+
 .text-box input[type="text"]:hover, .textarea textarea:hover, .text-box input[type="text"]:focus, .textarea textarea:focus, .text-box input[type="password"]:focus {
 outline:none;
 border-color:#008ed6;
