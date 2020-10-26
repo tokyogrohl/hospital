@@ -12,6 +12,7 @@ loginButton.addEventListener("click", (e) => {
     if (username === "user" && password === "12345") {
         window.location.href="homepage.html"
     } else {
-        loginErrorMsg.style.opacity = 1;        
+        loginErrorMsg.style.opacity = 1;     
+        location.reload();
     }
 })
