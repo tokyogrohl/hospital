@@ -4,7 +4,63 @@ body{
 	background:#fff;
 	font-family: 'Source Sans Pro', sans-serif;
  }
-
+.banner{
+background:url(../images/medical-banner1.jpg) no-repeat 0px 0px;
+min-height:720px;
+background-size:cover;
+}
+.header{
+padding:3em 0;
+}
+.logo{
+float:left;
+}
+.logo a{
+display:inline-block;
+}
+.top-menu{
+float:right;
+}
+.top-menu ul li{
+display:inline-block;
+}
+.top-menu ul li a{
+color:#fff;
+font-size:1.1em;
+padding:1em 1em 0em 1em;
+text-decoration:none;
+display:block;
+font-weight:400;
+}
+.top-menu ul li a:hover{
+color:#0199e6;
+}
+.banner-text{
+margin-top:10%;
+text-align:center;
+}
+.banner-text h1{
+font-size:3.2em;
+color:#fff;
+font-weight:500;
+margin-bottom:0.5em;
+font-family: 'Raleway', sans-serif;
+}
+.banner-text h1 span{
+color:#0199e6;
+font-weight:700;
+}
+.banner-text h1 label{
+font-weight:700;
+}
+.banner-text h2{
+font-size: 1.4em;
+line-height: 1.5em;
+color: #fff;
+font-weight: 300;
+width: 60%;
+margin: 0 auto;
+}
 .contact{
 padding:6% 0 8% 0;
 }
