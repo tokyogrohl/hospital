@@ -1,171 +1,199 @@
 body{
-	margin:0;
-	padding:0;
-	background:#fff;
+	margin: 0;
+	padding: 0;
+	background: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
  }
+ 
 .banner{
-background:url(../images/medical-banner1.jpg) no-repeat 0px 0px;
-min-height:720px;
-background-size:cover;
-}
-.header{
-padding:3em 0;
-}
-.logo{
-float:left;
-}
-.logo a{
-display:inline-block;
-}
-.top-menu{
-float:right;
-}
-.top-menu ul li{
-display:inline-block;
-}
-.top-menu ul li a{
-color:#fff;
-font-size:1.1em;
-padding:1em 1em 0em 1em;
-text-decoration:none;
-display:block;
-font-weight:400;
-}
-.top-menu ul li a:hover{
-color:#0199e6;
-}
-.banner-text{
-margin-top:10%;
-text-align:center;
-}
-.banner-text h1{
-font-size:3.2em;
-color:#fff;
-font-weight:500;
-margin-bottom:0.5em;
-font-family: 'Raleway', sans-serif;
-}
-.banner-text h1 span{
-color:#0199e6;
-font-weight:700;
-}
-.banner-text h1 label{
-font-weight:700;
-}
-.banner-text h2{
-font-size: 1.4em;
-line-height: 1.5em;
-color: #fff;
-font-weight: 300;
-width: 60%;
-margin: 0 auto;
-}
-.contact{
-padding:6% 0 8% 0;
-}
-.contact-text h3{
-margin:0;
-color:#393939;
-font-size:2.5em;
-font-family: 'Raleway', sans-serif;
-background:url(../images/line.png) no-repeat 50% 100%;
-padding-bottom:0.5em;
-margin-bottom:10px;
-font-weight:500;
-}
-.contact-text p{
-color: #8e8e8e;
-  font-weight: 400;
-  font-size: 1.2em;
-  line-height: 1.5em;
-}
-.contact-form{
-	text-align:center;
-margin-top:7em;
-margin-left:3em; 
-}
-.text-box input[type="text"], .textarea textarea {
-border: 2px solid #E5E5E5;
-width: 100%;
-padding: 0.85em;
-border-radius:25em; /*lingkaran kotak*/
-margin-bottom: 1.5em;
-color: #858585;
-}
-.text-box input[type="password"], .textarea textarea {
-    border: 2px solid #E5E5E5;
-    width: 100%;
-    padding: 0.85em;
-    border-radius: 25em; /*lingkaran kotak*/
-    margin-bottom: 1.5em;
-    color: #858585;
+	background: url(../images/medical-banner1.jpg) no-repeat 0px 0px;
+	min-height: 720px;
+	background-size: cover;
 }
 
-.text-box input[type="submit"] {
-background: #0199e6;
-border: 1px solid #0199e6;
-outline:none;
-color: #fff;
-font-size: 1.1em;
-padding: 0.7em 2.5em;
-font-weight:600;
-margin: 0 auto;
-border-radius: 25px; /*lingakran ktak*/
+.header{
+	padding: 3em 0;
 }
-.text-box input[type="submit"]:hover {
-outline:none;
-color:#0199e6;
-border: 1px solid #0199e6;
-background:transparent;
+
+.logo{
+	float: left;
 }
-.textarea input[type="submit"]:focus {
+
+.logo a{
+	display: inline-block;
+}
+
+.top-menu{
+	float: right;
+}
+
+.top-menu ul li{
+display: inline-block;
+}
+
+.top-menu ul li a{
+	color: #fff;
+	font-size: 1.1em;
+	padding: 1em 1em 0em 1em;
+	text-decoration: none;
+	display: block;
+	font-weight: 400;
+}
+
+.top-menu ul li a:hover{
+	color: #0199e6;
+}
+
+.banner-text{
+	margin-top: 10%;
+	text-align: center;
+}
+
+.banner-text h1{
+	font-size: 3.2em;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 0.5em;
+	font-family: 'Raleway', sans-serif;
+}
+
+.banner-text h1 span{
+	color: #0199e6;
+	font-weight: 700;
+}
+
+.banner-text h1 label{
+	font-weight: 700;
+}
+
+.banner-text h2{
+	font-size: 1.4em;
+	line-height: 1.5em;
+	color: #fff;
+	font-weight: 300;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.login{
+	padding: 6% 0 8% 0;
+}
+
+.login-text h3{
+	margin: 0;
+	color: #393939;
+	font-size: 2.5em;
+	font-family: 'Raleway', sans-serif;
+	background: url(../images/line.png) no-repeat 50% 100%;
+	padding-bottom: 0.5em;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.login-text p{
+	color: #8e8e8e;
+	font-weight: 400;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+#login-error-msg-holder{
+	width: -100%;
+	height: 100%;
+	padding: 0.7em 2.5em;
+	margin: 0 auto;
+}
+
+#login-error-msg{
+	width: 25%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #8a0000;
+	border: 1px solid #8a0000;
+	background-color: #e58f8f;
+	opacity: 0;
+}
+
+.login-form{
+	text-align: center;
+	margin-top: 7em;
+	margin-left: 3em; 
+}
+
+.text-box input[type="text"], .textarea textarea{
+	border: 2px solid #e5e5e5;
+	width: 100%;
+	padding: 0.85em;
+	border-radius: 25em; /*lingkaran kotak*/
+	margin-bottom: 1.5em;
+	color: #858585;
+}
+
+.text-box input[type="password"], .textarea textarea{
+	border: 2px solid #e5e5e5;
+	width: 100%;
+	padding: 0.85em;
+	border-radius: 25em; /*lingkaran kotak*/
+	margin-bottom: 1.5em;
+	color: #858585;
+}
+
+.text-box input[type="submit"]{
+	background: #0199e6;
+	border: 1px solid #0199e6;
+	outline:none;
+	color: #fff;
+	font-size: 1.1em;
+	padding: 0.7em 2.5em;
+	font-weight:600;
+	margin: 0 auto;
+	border-radius: 25px; /*lingakran kotak*/
+}
+
+.text-box input[type="submit"]:hover{
+	outline: none;
+	color: #0199e6;
+	border: 1px solid #0199e6;
+	background: transparent;
+}
+
+.textarea input[type="submit"]:focus{
 	outline:none;
 }
 
-.text-box input[type="text"]:hover, .textarea textarea:hover, .text-box input[type="text"]:focus, .textarea textarea:focus, .text-box input[type="password"]:focus {
-outline:none;
-border-color:#008ed6;
+.text-box input[type="text"]:hover,
+.textarea textarea:hover,
+.text-box input[type="text"]:focus,
+.textarea textarea:focus,
+.text-box input[type="password"]:focus{
+	outline: none;
+	border-color: #008ed6;
 }
 
 .footer{
-background:#050e12;
-padding:1em 0;
-text-align:center;
+	background: #050e12;
+	padding: 1em 0;
+	text-align: center;
 }
+
 .footer a img{
-display:inline-bloc
+	display: inline-block
 }
+
 .copy-right{
-margin-top:1em;
+	margin-top:1em;
 }
-.copy-right p {
-color: #7f7f7f;
-font-size: 1.1em;
-font-weight:600;
-line-height: 1.5em;
+
+.copy-right p{
+	color: #7f7f7f;
+	font-size: 1.1em;
+	font-weight: 600;
+	line-height: 1.5em;
 }
+
 .copy-right p a{
-color: #7f7f7f;
-}
-}
-
-#login-error-msg-holder {
-    width: -100%;
-    height: 100%;
-    padding: 0.7em 2.5em;
-    margin: 0 auto;
-}
-
-#login-error-msg {
-    width: 25%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #8a0000;
-    border: 1px solid #8a0000;
-    background-color: #e58f8f;
-    opacity: 0;
+	color: #7f7f7f;
 }
