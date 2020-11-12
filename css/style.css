@@ -15,6 +15,17 @@ body{
 	padding: 3em 0;
 }
 
+.header-form{
+	background: #050e12;
+	padding: 1.5em 0;
+}
+
+.header-form h3{
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+}
+
 .logo{
 	float: left;
 }
@@ -28,7 +39,7 @@ body{
 }
 
 .top-menu ul li{
-display: inline-block;
+	display: inline-block;
 }
 
 .top-menu ul li a{
@@ -127,7 +138,7 @@ display: inline-block;
 	border: 2px solid #e5e5e5;
 	width: 100%;
 	padding: 0.85em;
-	border-radius: 25em; /*lingkaran kotak*/
+	border-radius: 25em;
 	margin-bottom: 1.5em;
 	color: #858585;
 }
@@ -136,7 +147,7 @@ display: inline-block;
 	border: 2px solid #e5e5e5;
 	width: 100%;
 	padding: 0.85em;
-	border-radius: 25em; /*lingkaran kotak*/
+	border-radius: 25em;
 	margin-bottom: 1.5em;
 	color: #858585;
 }
@@ -150,7 +161,7 @@ display: inline-block;
 	padding: 0.7em 2.5em;
 	font-weight:600;
 	margin: 0 auto;
-	border-radius: 25px; /*lingakran kotak*/
+	border-radius: 25px;
 }
 
 .text-box input[type="submit"]:hover{
@@ -168,6 +179,7 @@ display: inline-block;
 .textarea textarea:hover,
 .text-box input[type="text"]:focus,
 .textarea textarea:focus,
+.text-box input[type="password"]:hover,
 .text-box input[type="password"]:focus{
 	outline: none;
 	border-color: #008ed6;
@@ -183,17 +195,65 @@ display: inline-block;
 	display: inline-block
 }
 
-.copy-right{
-	margin-top:1em;
+#copy-right{
+	margin: auto;
 }
 
 .copy-right p{
 	color: #7f7f7f;
-	font-size: 1.1em;
+	font-size: 1em;
 	font-weight: 600;
 	line-height: 1.5em;
 }
 
 .copy-right p a{
 	color: #7f7f7f;
+}
+
+.copyright{
+	text-align: center;
+	background: #050e12;
+	padding: 1.5em 0;
+}
+
+.copyright p{
+	font-size: 1em;
+	color: #7f7f7f
+}
+	
+.copyright a{
+	text-decoration: none;
+	color: #0199e6;
+}
+
+table{
+	color: white;
+	font-size: 12pt;
+}
+
+input[type=text],
+input[type=number],
+input[type=email]{
+	width: 100%;
+	padding: 0.5em 0.5em;
+	margin: 3px 0;
+	color: black;
+}
+
+select{
+	padding: 0.5em 0.5em;
+	margin: 3px 0;
+	color: black;
+}
+
+input[type=submit],
+input[type=reset]{
+	background: #0199e6;
+	border: none;
+	color: #fff;
+	padding: 0.5em 0.5em;
+	text-decoration: none;
+	margin: 4px 2px;
+	font-size: 10pt;
+	cursor: pointer;
 }
