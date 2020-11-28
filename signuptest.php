@@ -18,10 +18,11 @@
 		  <select id="usertype" name="usertype">
 		  <option value="doctor">Doctor</option>
 		  <option value="staff">Staff</option>
+		  <option value="admin">Admin</option>
 		  </select>
 		  <button type="submit" name="submit">Sign Up</button>
 		</form>
-		<h3><li><a href ='index.php'> Home </a></li></h3>
+		
 		<?php
 if (isset($_GET["error"])){
 	if ($_GET["error"] == "emptyinput") {

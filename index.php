@@ -1,48 +1,32 @@
-﻿<?php
+<?php
 session_start();
+include_once 'includes/dbcheck.inc.php';
+include_once 'includes/tabcheck.inc.php';
 ?>
 
-<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8" />
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Hospital Testing</title>
+<title>URBAN HOSPITAL</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
 </head>
 <body>
-    
-<nav>
-<li><a href='signup.php'>Sign up</a></li>
+<div id="login" class="login">
+<div class="login-text text-center">
+<h3>LOGIN</h3>
+<p>Urban Hospital for Citizens</p>
+</div>
 
-</nav>
-    <div class="Login">
-        <h3>LOGIN</h3>
-		<form action="includes/login.inc.php" method="post">
-        <div class="logform">
-            <input class="username" name="uname" type="text" placeholder="User ID" /> <br />
-            <input class="password" name="pwd" type="password" placeholder="Password" /> <br />
-            <button class="submit" name="submit" type="submit" > Log In </button>
-        </div>
-		</form>
-    </div>
-	<div class="footer">
-<div class="ftr-logo">
-<a href="index.html"><img src="images/logo2.png" alt="" /></a>
-</div>
-<div class="copy-right">
-<p>Copyright &#169; 2020 Urban Hospital
-<p>All Rights Reserved</p>
-</div>
-</body>
+<div id="login-error-msg-holder">
 
 <?php
 
 if (isset($_GET["error"])){
 	if ($_GET["error"] == "emptyinput") {
-		echo "<p> Fill in all fields! </p>";
+		echo "<p> Fill in all the fields! </p>";
 	}
 	else if($_GET["error"] == "wrongLogin") {
 		echo "<p>Incorrect Login</p>";
@@ -53,5 +37,22 @@ if (isset($_GET["error"])){
 }
 ?>
 
+</div>
+<div class="login-form">
+<form id="login-form" action="includes/login.inc.php" method="post">
+<div class="col-md-6 col-md-offset-4 text-box">
+	<input name="uname" type="text" placeholder="User ID" autocomplete="off">
+	<input name="pwd" type="password" placeholder="Password">
+	<input name="submit" type="submit" value="SUBMIT" id="login-form-submit">
+</div>
+<div class="clearfix"></div>
+</form>
+</div>
+</div>
 
+<?php
+include_once 'footer.php';
+?>
+
+</body>
 </html>

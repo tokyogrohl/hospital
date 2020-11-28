@@ -2,46 +2,53 @@
 
 <html>
 <head>
-<title>URBAN HOSPITAL</title>
+<title>Welcome Staff</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
 <div class="banner">
 <div class="container">
-<div class="header">	 
-<div class="logo">
-<a href="index.html"><img src="images/logo2.png" alt=""/></a>
-</div>	
-<div class="top-menu">
-<span class="menu"></span> 
-<ul>
-<li><a href="#home">HOME</a></li>
-<li><a href="#register">REGISTER</a></li>
-<li><a href="#schedule">SCHEDULE</a></li>
-<li><a href="#information">INFORMATION</a></li>
-<?php
-session_start();
 
-if (isset($_SESSION["useruid"])) {
-	echo "<li><a href ='logout.php'> Log out </a></li>";
-}
-else{
-	header("location: index.php");
-	exit();
-}
+<?php
+include_once 'staffheader.php';
+include_once 'includes/patcheck.inc.php';
+include_once 'includes/vischeck.inc.php';
 ?>
-</ul>
-</div>
-<div class="clearfix"></div>
-</div>
+
+
 
 <div class="banner-text">
 <h1><span>Welcome</span></h1>
-<h2>hello there the angel of my nighmare the strahjhdsjahfjsafs dont waste your time on me your already the voice inside my head</h2>
+
+
+<form action="includes/checkin.inc.php" method="post">
+  <div class="form-row">
+  <div class="form-group col-md-6 text-box">
+    <input type="text" class="form-control" name="patID" placeholder="Patient ID">
+  </div>
+  <div class="form-group col-md-6 text-box">
+    <input type="text" class="form-control" name="reason" placeholder="Reason for Visit">
+  </div>
+  <div class="form-group col-md-6">
+    <button type="submit" name="submit" class="btn btn-success">Check In</button>
+  </div>
+</div>
+</form>
+
+<?php
+include_once 'includes/patientdat.inc.php';
+?>
+
+
 </div>
 <div class="clearfix"></div>
-</div>		 
 </div>
+</div>
+
+<?php
+include_once 'footer.php';
+?>
+
 </body>
 </html>
